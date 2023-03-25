@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Flask Login Example
+</h1>
+<h2 class="subtitle">
+  Easy authentication and authorization in Flask.
+</h2>
+{% endblock %}
+
+{% block navbar %}
+<div class="navbar-end">
+  <a class="navbar-item" href="{{ url_for('auth.login') }}">
+    Login
+  </a>
+  <a class="navbar-item" href="{{ url_for('auth.register') }}">
+    Register
+  </a>
+</div>
+{% endblock %}
